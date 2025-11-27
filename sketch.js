@@ -1,20 +1,25 @@
 let screen = document.querySelector(".sketchscreen")
 
 console.log(screen);
-
-for(let i = 0; i<16;i++)
+function makeGrid(size)
 {
-    let column= document.createElement("div");
-    column.classList.add("column");
-    for(let j = 1; j<=16;j++)
+     for(let i = 0; i<size;i++)
     {
-        let row = document.createElement("div")
-        row.classList.add("row");
-        row.textContent = (i*16)+j;
-        column.appendChild(row);
+        let column= document.createElement("div");
+        column.classList.add("column");
+        for(let j = 1; j<=size;j++)
+        {
+            let row = document.createElement("div")
+            row.classList.add("row");
+            row.textContent = (size*16)+j;
+            column.appendChild(row);
+        }
+        screen.appendChild(column)
     }
-    screen.appendChild(column)
 }
+
+makeGrid(16);
+
 
 screen.addEventListener("mouseover",(e) =>
 {

@@ -1,0 +1,38 @@
+.container
+{
+    display:flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.sketchcontainer
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button
+{
+    width: 20px;
+    height:20px;
+    align-self: flex-end;
+}
+
+.sketchscreen
+{
+    display:flex;
+    flex-wrap: wrap;
+    width:auto;
+    height: auto;
+}
+
+
+
+.row
+{
+    flex:1;
+    background-color: blue;
+    border: 2px solid black;
+}

@@ -1,5 +1,6 @@
 let screen = document.querySelector(".sketchscreen")
-
+let input = document.querySelector(".resize")
+let testbtn = document.querySelector(".test")
 console.log(screen);
 function makeGrid(size)
 {
@@ -11,7 +12,7 @@ function makeGrid(size)
         {
             let row = document.createElement("div")
             row.classList.add("row");
-            row.textContent = (size*16)+j;
+            // row.textContent = (size*i)+j;
             column.appendChild(row);
         }
         screen.appendChild(column)
@@ -43,3 +44,28 @@ remove.addEventListener("click",() =>
 
 
 });
+
+function resizeGrid(input)
+{
+    makeGrid(input);
+}
+
+function clearGrid()
+{
+    screen.innerHTML = "";
+}
+
+
+testbtn.addEventListener("click",() =>
+{
+
+    let value = input.value;
+    console.log(value);
+    clearGrid();
+    resizeGrid(value);
+
+
+
+});
+
+

@@ -1,33 +1,31 @@
 .container
 {
-    display:flex;
-    justify-content: center;
-    background-color: rgb(250, 10, 10);
+    /* justify-content: center; */
+    background-color: rgb(255, 255, 255);
 }
 
 .sketchcontainer
 {
-    display:flex;
-    justify-content: center;
-    align-items: center;
     width:960px;
     height:960px;
 }
 
-
+.buttons
+{
+    align-self: flex-end;
+}
 
 .sketchscreen
 {
     display:flex;
     flex-wrap: wrap;
-}
+    width:960px;
+    height:960px;
+}   
 
 
 
 .row
 {
     background-color: rgb(255, 255, 255);
-    width: 30px;
-    height:30px;
-    border: 2px solid black;
 }
